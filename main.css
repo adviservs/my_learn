@@ -1,0 +1,13 @@
+body {
+	background: #fbf9f1;
+	color: #171717;
+	font-style: italic;
+	font-size: 18px;
+}
+
+.new::after {
+	content: " - Новьё!";
+	color: red;
+	font-style: italic;
+	font-size: 18px;
+}
