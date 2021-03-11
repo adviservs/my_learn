@@ -1,13 +1,15 @@
 body {
 	background: #fbf9f1;
 	color: #171717;
-	font-style: italic;
 	font-size: 18px;
 }
 
-.new::after {
-	content: " - Новьё!";
+ul {
+	list-style: none;
+}
+
+li::before {
+	content: "✿";
+	padding-right: 7px;
 	color: red;
-	font-style: italic;
-	font-size: 18px;
 }
