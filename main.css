@@ -4,7 +4,8 @@ body {
 	font-size: 18px;
 }
 
-a::after {
-	content: " [" attr(href) "]";
-	color: #666;
+p::before {
+	content: 	'❡';
+	font-size: 1.2em;
+	color: #ccc;
 }
