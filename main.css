@@ -4,23 +4,7 @@ body {
 	font-size: 18px;
 }
 
-ul {
-	list-style: none;
-}
-
-li {
-	counter-increment: list;
-	margin-bottom: 0.2em;
-}
-
-li::before {
-	content: counter(list);
-	display: inline-block;
-	width: 1.5em;
-	height: 1.5em;
-	line-height: 1.5em;
-	background-color: #478eb0;
-	color: #fff;
-	text-align: center;
-	margin-right: 0.5em;
+a::after {
+	content: " [" attr(href) "]";
+	color: #666;
 }
