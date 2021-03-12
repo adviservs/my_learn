@@ -4,22 +4,16 @@ body {
 	font-size: 18px;
 }
 
-.breadcrumbs {
-	margin: 0;
-	padding: 10px;
-	background: #b2d235;
+blockquote {
+	quotes: "«" "»" "„" "“";
 }
 
-.breadcrumbs li {
-	display: inline-block;
+blockquote::before {
+	content: open-quote;
+	color: #c1172c;
 }
 
-.breadcrumbs a {
-	color: #fff;
-	text-decoration: none;
-}
-
-.breadcrumbs li + li::before {
-	content: "/";
-	padding: 0 7px;
+blockquote::after {
+	content: close-quote;
+	color: #c1172c;
 }
