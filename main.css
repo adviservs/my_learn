@@ -4,27 +4,23 @@ body {
 	font-size: 18px;
 }
 
-.search {
-	padding: 5px 15px;
+ul {
+	list-style: none;
+}
+
+li {
+	counter-increment: list;
+	margin-bottom: 0.2em;
+}
+
+li::before {
+	content: counter(list);
 	display: inline-block;
-	border: 1px solid #945323;
-	border-radius: 20px;
-}
-
-[type="search"] {
-	border: none;
-	outline: none;
-}
-
-.zoom {
-	border: none;
-	/*background: transparent;*/
-	width: 20px;
-	height: 20px;
-	vertical-align: middle;
-	padding: 0;
-}
-
-.zoom::before {
-	content: url(//webref.ru/example/image/search.png);
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	background-color: #478eb0;
+	color: #fff;
+	text-align: center;
+	margin-right: 0.5em;
 }
