@@ -4,24 +4,41 @@ body {
 	font-size: 18px;
 }
 
-.ingredients {
-	padding: 0;
+.block {
+	width: 300px;
 }
 
-.ingredients li {
-	align-items: baseline;
-	display: flex;
-	margin-bottom: 0.5em;
+.photo img {
+	display: block;
 }
 
-.ingredients li::before {
+.block .title {
+	font: normal 20px Arial, sans-serif;
+	background: #f7f7f7;
+	color: #2d3032;
+	border-bottom: 2px solid #ecebe9;
+	padding: 1em;
+	position: relative;
+}
+
+.block .title::before {
 	content: '';
-	border-bottom: 1px dashed #ccc;
-	flex-grow: 1;
-	order: 2;
-	margin: 0 5px;
+	left: 0;
+	top: 1em;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px;
+	border-color: transparent transparent transparent #de3a31;
+	position: absolute;
 }
 
-.ingredients .value {
-	order: 3;
+.block:hover .title {
+	background: #323e4e;
+	color: #fff;
+	border-color: #de3a31;
+}
+
+.block:hover .title::before {
+	border-left-color: #fff;
 }
