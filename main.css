@@ -4,41 +4,22 @@ body {
 	font-size: 18px;
 }
 
-.block {
-	width: 300px;
-}
-
-.photo img {
-	display: block;
-}
-
-.block .title {
-	font: normal 20px Arial, sans-serif;
-	background: #f7f7f7;
-	color: #2d3032;
-	border-bottom: 2px solid #ecebe9;
-	padding: 1em;
+.note {
 	position: relative;
+	background: #c5df94;
+	padding: 20px;
+	overflow: hidden;
 }
 
-.block .title::before {
+.note::after {
 	content: '';
-	left: 0;
-	top: 1em;
+	position: absolute;
+	top: 0;
+	right: 0;
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 10px;
-	border-color: transparent transparent transparent #de3a31;
-	position: absolute;
-}
-
-.block:hover .title {
-	background: #323e4e;
-	color: #fff;
-	border-color: #de3a31;
-}
-
-.block:hover .title::before {
-	border-left-color: #fff;
+	border-width: 20px 0 0 20px;
+	border-color: #fbf9f1 transparent transparent #e2edc1;
+	box-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
