@@ -1,26 +1,32 @@
-body {
+/*body {
 	background: #f7f6f2;
 	color: #171717;
 	font-size: 18px;
+}*/
+
+body {
+	font-family: Verdana;
 }
 
-.photo {
-	display: inline-block;
-	position: relative;
+article {
+	max-width: 800px;
 }
 
-.photo img {
-	display: block;
+h1 {
+	color: green;
 }
 
-.photo:hover::after {
-	content: attr(data-title);
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(209,155,111,0.8);
-	font-size: 11px;
+header p {
+	background-color: grey;
+	color: white;
+}
+
+figure {
+	width: 600px;
+	border: 3px solid black;
 	padding: 5px;
-	text-align: center;
+}
+
+figure img {
+	width: 100%;
 }
