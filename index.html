@@ -6,33 +6,68 @@
 		<title>Form</title>
 	</head>
 	<body>
-		<form action="#">
-			<div>
-				<label for="nickname">Your name</label>
-			</div>
-			<div>
-				<input type="text" id="nickname" name="nickname">
-			</div>
-			<div>
-				<label for="email">Email</label>
-			</div>
-			<div>
-				<input type="email" id="email" name="email" required>
-			</div>
-			<div>
-				<label for="content">Content</label>
-			</div>
-			<div>
-				<textarea rows="10" cols="50" id="content" name="content" placeholder="Введите здесь комментарий. Будьте внимательны и вежливы!"></textarea>
-			</div>
-			<div>
-				<input type="submit" name="submit" value="Add">
-			</div>
-<!-- 			<div>
-				<div class="container">1</div>
-				<div class="container">2</div>
-				<div class="container">3</div>
-			</div> -->
-		</form>
+		<div class="main-container">
+		  <nav class="site-menu">
+        <ul class="site-nav">
+          <li class="site-nav-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="training.html">Обучение</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="conferences.html">Конференции</a>
+          </li>
+          <li class="site-nav-item">
+            <a href="about.html">О нас</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-content">
+      	<article>
+          <header>
+            <h1>Джастин Бивер: С тех пор, как я узнал HTML, моя жизнь повернулась на 180 градусов</h1>
+            <p>Написал: Дамиан Вельгошик</p>
+          </header>
+          <figure>
+            <img src="image/cat.png" alt="Cat" width="250px">
+            <figcaption>Счастливый кот Джастина Бивера</figcaption>
+          </figure>
+          <p>
+            Джастин Бивер сделал признание, которого никак не ожидали даже самые большие поклонники талантливого музыканта и поэта. Молодой певец признался, что когда он набрал свой первый тег, его жизнь стала легче. Из окружения канадца сообщают, что частные наставники Бивера, Райан Лослинг и  Николас Крейт, часто гуляют по Лос-Анджелесу, споря об инструменте HTML-валидатор.
+          </p>
+          <p>
+            Бивер уже создал несколько сайтов и не намерен останавливаться на достигнутом.
+            <q>Я, вероятно, спою об HTML в своём следующем альбоме</q>, - добавил певец.
+          </p>
+        </article>
+        <form>
+          <div>
+            <label for="nickname">Your name</label>
+          </div>
+          <div>
+            <input type="text" id="nickname" name="nickname">
+          </div>
+          <div>
+            <label for="email">Email</label>
+          </div>
+          <div>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="content">Content</label>
+          </div>
+          <div>
+            <textarea rows="10" cols="50" id="content" name="content" placeholder="Введите здесь комментарий. Будьте внимательны и вежливы!"></textarea>
+          </div>
+          <div>
+            <input type="submit" name="submit" value="Add">
+          </div>
+        </form>
+      </div>
+      <aside class="sidebar">
+		    <div>вставьте сюда код для сайдбара</div>
+		  </aside>
+		</div>
 	</body>
 </html>
