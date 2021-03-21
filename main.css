@@ -14,7 +14,7 @@ body {
 }
 .box-set {
   background: #eaeaed;
-  overflow: auto;
+  /*overflow: auto;*/
 }
 .box {
   background: #2db34a;
@@ -28,4 +28,16 @@ body {
 .box:nth-child(2) {
   position: relative;
   top: 20px;
+}
+.box-set:before,
+.box-set:after {
+	content: "";
+	display: table;
+	/*border: 2px solid #111;*/
+}
+.box-set:after {
+	clear: both;
+}
+.box-set {
+	*zoom: 1;
 }
