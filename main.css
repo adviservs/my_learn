@@ -8,25 +8,32 @@ body {
 }
 .box-set {
   background: #eaeaed;
+  height: 200px;
+  position: relative;
 }
 .box {
   background: #2db34a;
   height: 80px;
   width: 80px;
-  position: relative;
+  position: absolute;
   line-height: 80px;
   text-align: center;
 }
 .box-1 {
 	background: black;
-	top: 20px;
+	top: 6%;
+	left: 2%;
 }
 .box-2 {
 	background: yellow;
-	left: 40px;
+	top: 0;
+	right: -40px;
 }
 .box-3 {
 	background: brown;
 	bottom: -10px;
 	right: 20px;
+}
+.box-4 {
+	bottom: 0;
 }
