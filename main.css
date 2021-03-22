@@ -9,13 +9,13 @@ body {
 .box-set {
   background: #eaeaed;
   height: 200px;
-  position: relative;
+  /*position: relative;*/
 }
 .box {
   background: #2db34a;
   height: 80px;
   width: 80px;
-  position: absolute;
+  position: fixed;
   line-height: 80px;
   text-align: center;
 }
