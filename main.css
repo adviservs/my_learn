@@ -2,8 +2,8 @@ body {
   color: #666;
   font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
 }
-.alpha::first-letter,
-.bravo::first-line {
-	color: #ff7b29;
-	font-size: 18px;
+a::after {
+	color: #9799a7;
+	content: " (" attr(href) ")";
+	font-size: 11px;
 }
