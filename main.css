@@ -2,8 +2,10 @@ body {
   color: #666;
   font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
 }
-a::after {
-	color: #9799a7;
-	content: " (" attr(href) ")";
-	font-size: 11px;
+::-moz-selection {
+  background: #ff7b29;
+}
+::selection {
+  background: #ff7b29;
+  color: #fff;
 }
