@@ -1,43 +1,41 @@
 body {
-  font: 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
 }
-.arrow {
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.container {
+  background: #eaeaed;
+  *zoom: 1;
+}
+.container,
+section,
+aside {
+  border-radius: 6px;
+}
+section,
+aside {
   background: #2db34a;
   color: #fff;
-  display: inline-block;
-  height: 30px;
-  line-height: 30px;
-  margin-left: 15px;
-  padding: 0 12px;
-  position: relative;
-  text-decoration: none;
+  margin: 1.858736059%;
+  padding: 20px 0;
+  text-align: center;
 }
-.arrow:before,
-.arrow:after {
-  content: "";
-  height: 0;
-  position: absolute;
-  width: 0;
-}
-.arrow:before {
-  border-bottom: 15px solid #2db34a;
-  border-left: 15px solid transparent;
-  border-top: 15px solid #2db34a;
-  left: -15px;
-}
-.arrow:after {
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid #2db34a;
-  border-top: 15px solid transparent;
-  right: -15px;
-}
-.arrow:hover {
-  background: #ff7b29;
-}
-.arrow:hover:before {
-  border-bottom: 15px solid #ff7b29;
-  border-top: 15px solid #ff7b29;
-}
-.arrow:hover:after {
-  border-left: 15px solid #ff7b29;
+@media all and (min-width: 420px) {
+  .container {
+    max-width: 538px;
+  }
+  section {
+    float: left;
+    width: 63.197026%;
+  }
+  aside {
+    float: right;
+    width: 29.3680297%;
+  }
 }
